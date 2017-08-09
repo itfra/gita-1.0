@@ -1,7 +1,7 @@
 package Escursioni;
 import javafx.scene.chart.PieChart.Data;
 
-public class Escursione {
+abstract class Escursione {
 	
 	String tipo;
 	int maxPartecipanti;
@@ -21,8 +21,13 @@ public class Escursione {
 		this.data = dataEscursione;
 	};
 	
-	void setManager(){};
+	void setManager(){
+		
+	};
 	
+	void setOptional(){
+		
+	};
 		
 	public static void main(String[] args) {
 		Mongolfiera m1 = new Mongolfiera();
