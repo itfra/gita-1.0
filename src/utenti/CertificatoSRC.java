@@ -1,15 +1,13 @@
 package utenti;
 
-
-import java.io.File;
-import javafx.scene.chart.PieChart.Data;
+import java.util.Date;
 
 public class CertificatoSRC {
 
-	Data data;
-	File certificato;
+	Date data;
+	String certificato;
 	
-	Data getdata(){
+	Date getdata(){
 		return data;
 	}
 	

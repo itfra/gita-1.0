@@ -1,4 +1,4 @@
-package Escursioni;
+package escursioni;
 
 public class Mongolfiera extends Escursione{
 	

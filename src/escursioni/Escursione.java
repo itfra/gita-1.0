@@ -1,13 +1,21 @@
-package Escursioni;
-import javafx.scene.chart.PieChart.Data;
+package escursioni;
+
+import java.util.Date;
 
 abstract class Escursione {
 	
 	String tipo;
 	int maxPartecipanti;
 	int minPartecipanti;
-	Data data;
+	Date data;
 	
+	/**public Escursione(Date data,int min, int max ) {
+		setData(data);
+		setMaxPartecipanti(max);
+		setMinPartecipanti(min);
+		setManager();
+		setOptional();
+	}**/
 	
 	void setMaxPartecipanti(int max){
 		this.maxPartecipanti = max;
@@ -17,7 +25,7 @@ abstract class Escursione {
 		this.minPartecipanti = min;
 	};
 	
-	void setData(Data dataEscursione){
+	void setData(Date dataEscursione){
 		this.data = dataEscursione;
 	};
 	
@@ -29,13 +37,6 @@ abstract class Escursione {
 		
 	};
 		
-	public static void main(String[] args) {
-		Mongolfiera m1 = new Mongolfiera();
-		System.out.println("m1" + m1.tipo);	
-		Montagna m2 = new Montagna();
-		System.out.println("m2" + m2.tipo);	
-	}
-
 	
 	
 	}
